@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tentang Saya - Portofolio" />
+    <title>Tentang - Portofolio Saya</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-wave-square"></i> Portofolio
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">Tentang</a></li>
+          <li><a href="projects.html" class="nav-link">Project</a></li>
+          <li>
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle dark mode"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-page">
+      <div class="container">
+        <h2 class="section-title"><i class="fas fa-user"></i> Tentang Saya</h2>
+
+        <div class="about-grid">
+          <!-- Biodata -->
+          <div class="about-card">
+            <h3><i class="fas fa-id-card"></i> Biodata</h3>
+            <ul class="bio-list">
+              <li><strong>Nama:</strong> Nasril Said Masbait</li>
+              <li><strong>NIM:</strong> 231011400150</li>
+              <li><strong>Instansi:</strong> Universitas Pamulang</li>
+              <li><strong>Lokasi:</strong> Tanggerang Selatan, Indonesia</li>
+              <li><strong>Email:</strong> email@nasrilsaid5.com</li>
+            </ul>
+          </div>
+
+          <!-- Skills -->
+          <div class="about-card">
+            <h3><i class="fas fa-laptop-code"></i> Skill Utama</h3>
+            <div class="skills-grid">
+              <span class="skill-tag">HTML5 & CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">MySQL / SQLite</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="about-card">
+            <h3><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-year">2023 - Sekarang</span>
+                <h4>Menempuh Pendidikan S1 Teknik Informatika</h4>
+                <p>Universitas Pamulang</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2013 - 2016</span>
+                <h4>Alumni SMPN Ilath</h4>
+                <p>Kab.Buru Prov.Maluku</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2008 - 2013</span>
+                <h4>Alumni SDN Ilath</h4>
+                <p>Kab.Buru Prov.Maluku</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>
+          &copy; <span id="currentYear"></span>
+          <strong>Nasril Said Masbait</strong>. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

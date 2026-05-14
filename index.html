@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio pribadi - Dosen Teknik Informatika"
+    />
+    <title>Home - Portofolio Saya</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-wave-square"></i> Portofolio
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">Tentang</a></li>
+          <li><a href="projects.html" class="nav-link">Project</a></li>
+          <li>
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle dark mode"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section class="section home">
+      <div class="container home-container">
+        <div class="profile-wrapper">
+          <div class="profile-image">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Foto Profil"
+              onerror="
+                this.src = 'https://via.placeholder.com/200x200?text=Foto'
+              "
+            />
+          </div>
+          <div class="profile-badge">
+            <i class="fas fa-check-circle"></i> Available
+          </div>
+        </div>
+
+        <div class="home-content">
+          <p class="home-greeting">Halo, Saya </p>
+          <h1 class="home-title">Nasril Said Masbait</h1>
+          <h2 class="home-subtitle">
+            Mahasiswa Teknik Informatika | S1 
+          </h2>
+          <p class="home-description">
+            Passionate dalam pengembangan aplikasi web, machine learning, dan
+            pendidikan teknologi. Membangun solusi digital yang bermanfaat untuk
+            masyarakat.
+          </p>
+
+          <!-- Tombol Aksi: Hanya 2 tombol -->
+          <div class="home-actions">
+            <a href="assets/docs/cv.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Hubungi Saya
+            </a>
+          </div>
+
+          <!-- Social Links -->
+            <a
+              href="https://github.com/username"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://instagram.com/n_lessnussa"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:email@anda.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Decoration -->
+      <div class="wave-decoration">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 60L48 52C96 44 192 28 288 26C384 24 480 36 576 46C672 56 768 64 864 66C960 68 1056 64 1152 58C1248 52 1344 44 1392 40L1440 36V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z"
+            class="wave-path"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (untuk smooth scroll #contact) -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-envelope"></i> Hubungi Saya
+        </h2>
+
+        <div class="contact-simple">
+          <p>Silakan hubungi saya melalui channel berikut:</p>
+
+          <div class="contact-methods">
+            <a href="mailto:email@anda.com" class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <span>email@nasrilsaid5.com</span>
+            </a>
+            <a
+              href="https://wa.me/62895361160020"
+              class="contact-method"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              <span>+62 895-3611-60020</span>
+            </a>
+            <a
+              href="https://instagram.com/n_lessnussa"
+              class="contact-method"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>@n_lessnussa</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>
+          &copy; <span id="currentYear"></span>
+          <strong>nasril said masbait</strong>. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
